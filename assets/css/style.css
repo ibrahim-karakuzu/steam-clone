@@ -1,0 +1,1024 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/*
+001-HEADER
+002-SİDEBAR
+003-HERO
+004-APP SLİDER
+005-CAROUSEL
+006-GAMESCOM
+007-SİGN İN
+008-UNDER TEN
+009-NEW RELEASES
+010-BİG 4 BUTTONS
+011-VİRTUAL REALİTY
+012-HOME MARKET
+013-FOOTER
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:  "Poppins", sans-serif;
+}
+ul, li, ol{
+    list-style-type: none;
+    text-decoration: none;
+}
+a{
+    text-decoration: none;
+}
+body{
+    background-color: #1a293a;
+    position: relative;
+}
+
+.content{
+    width: 1230px;
+    height: auto;
+    padding-left:290px ;
+    margin-top: 70px;
+    margin-bottom: 70px;
+    position: relative;
+}
+.arrow-left{
+    position: absolute;
+    width: 37px;
+    height: 108px;
+    top: 50%;
+    left: -37px;
+    transform: translateY(-50%);
+    background-color: #06BFFF;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    cursor:pointer;
+    background: linear-gradient( to right, rgba( 0, 0, 0, 0.3) 5%,rgba( 0, 0, 0, 0) 95%);
+    font-size: 40px;
+    font-weight: 400;
+    color: #fff;
+}
+.arrow-left:hover{
+    background: linear-gradient( to right, rgba(181, 180, 180, 0.3) 5%,rgba( 0, 0, 0, 0) 95%);
+}
+.arrow-right:hover{
+    background: linear-gradient( to left, rgba(181, 180, 180, 0.3) 5%,rgba( 0, 0, 0, 0) 95%); 
+}
+.arrow-right{
+    position: absolute;
+    width: 37px;
+    height: 108px;
+    top: 50%;
+    left: 100%;
+    transform: translateY(-50%);
+    background-color: #06BFFF;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    background: linear-gradient( to left, rgba( 0, 0, 0, 0.3) 5%,rgba( 0, 0, 0, 0) 95%);
+    font-size: 40px;
+    font-weight: 400;
+    color: #fff;
+}
+.active{
+    display: flex;
+}
+/*001-HEADER*/
+header{
+    width: 100%;
+    height: 100px;
+    background-color: #171d25;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position:relative;
+}
+header .container{
+    width: 940px;
+    height: 100%;
+    margin: 0 64.5;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+}
+header .container .logo{
+    float: left;
+}
+header .container .logo a img{
+    width: 176px;
+}
+header .container .menu ul {
+    display: flex;
+    flex-direction: row;
+}
+header .container .menu ul a{
+    position: relative;
+}
+header .container .menu ul a li{
+    margin-left: 10px;
+    color: rgb(220, 222, 223);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 16px;
+}
+header .container .menu ul a li:hover{
+    color: white;
+}
+header .container .menu ul a #ana{
+    color: #1A9FFF;
+    border-bottom:3px solid #1A9FFF;
+}
+header .container .mini-menu{
+    position: absolute;
+    top: 0;
+    left:80%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 200px;
+    margin: 10px;
+}
+header .container .mini-menu a span{
+    margin-left:5px;
+    border-left: 1px solid gray;
+    color: gray;
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 24px;
+    padding-left:5px;
+    cursor: pointer;
+}
+header .container .mini-menu a span:hover{
+    color: aliceblue;
+}
+header .container .mini-menu button{
+    background-color: rgb(92, 126, 16);
+    color: rgb(229, 228, 220);
+    font-size: 11px;
+    font-weight: 400;
+    border: 0px;
+    width: 127px;
+    height: 24;
+    padding: 5px 3px;
+    cursor: pointer;
+}
+header .container .mini-menu button:hover{
+    background-color:rgb(133, 172, 48) ;
+    transition: 530ms;
+}
+header .container nav .menu ul a .menu-bottom-item{
+    width: 100px;
+    height: auto;
+    background-color: rgb(61, 68, 80);
+    position: absolute;
+    top: 100%;
+    z-index: 995;
+    display:none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+header .container nav .menu ul a .menu-bottom-item.active{
+    display: flex;
+}
+header .container nav .menu ul a .menu-bottom-item div{
+    font-size: 12px;
+    text-align: center;
+    margin-left: 0;
+    width: 100%;
+    height: 30px;
+    color: #f2f2f2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+header .container nav .menu ul a .menu-bottom-item div:hover{
+    color: rgb(55, 55, 55);
+    background-color: #f2f2f2;
+}
+/*HEADER FİNİSH*/
+/*002-SİDEBAR*/
+main aside{
+    width: 190px;
+    height: 865px;
+    position: absolute;
+    top: 580px;
+    left: 55px;
+    padding-top: 33px;
+    z-index: 999;
+}
+main aside .sidebar-item{
+    width: 100%;
+    margin-bottom: 20px;
+}
+main aside a .steamcard img{
+    width: 178px;
+    height: 65px;
+    margin-bottom: 4px;
+}
+main aside a .steamcard h4{
+    font-size: 14px;
+    font-weight: 700;
+    color: rgb(136, 189, 233);
+    line-height: 16px;
+    margin-bottom: 2px;
+}
+main aside a .steamcard p{
+    color: #a4b3c4;
+    font-size: 12px;
+    font-weight: 550;
+}
+main aside .steamcard:hover > h4{
+    color: #fff;
+}
+main aside .steamcard:hover > p{
+    color: #d1d1d1;
+}
+main aside .recently-wiev{
+    background:radial-gradient(circle at 0%, rgba(83, 111, 134, 0) 20%, rgba(83, 111, 134, 0.25) 100%);
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+main aside .recently-wiev h4{
+    color: rgb(83, 111, 134);
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 16px;
+}
+main aside .recently-wiev span{
+    font-size: 8px;
+    color: #fff;
+    margin-bottom: 8px;
+}
+main aside .recently-wiev ul li{
+    color: rgb(122, 139, 157);
+    font-size: 12px;
+    font-weight: 550;
+    cursor: pointer;
+    margin-top: 2px;
+}
+main aside .sidebar-item ul li:hover{
+    color: rgb(102, 192, 244);
+}
+main aside .sidebar-item ul a li{
+    color: rgb(122, 139, 157);
+    font-size: 12px;
+    font-weight: 550;
+    cursor: pointer;
+    margin-top: 2px;
+}
+main aside .sidebar-item .item-header{
+    color: rgb(83, 111, 134);
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 16px;
+    margin-bottom: 7px;
+}
+/*SİDEBAR FİNİSH*/
+/*003-HERO İMAGE */
+main .hero{
+    width: 100%;
+    height: 450px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+main .hero img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+main .hero .store-menu{
+    width: 900px;
+    height: 34px;
+    background-image: linear-gradient(to right, #3b5f8c, #182b71 );
+    position: absolute;
+    margin-top: 25px;
+    z-index: 2;
+    opacity: 0.9;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+main .hero .store-menu .menu-item{
+    padding: 0px 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+}
+main .hero .store-menu .menu-item:hover{
+    background-image: linear-gradient(90deg, rgba(33, 162, 255, 0.25) 0%, rgba(33, 162, 255, 0.15) 50%, rgba(50, 50, 51, 0) 100%);
+}
+main .hero .store-menu .menu-item a{
+    color: rgb(255, 255, 255);
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 34px;
+    text-shadow: 0px 2px 3px rgba(0, 0, 0, 0.3);
+}
+main .hero .store-menu .menu-item-search{
+    margin-left: 80px;
+}
+main .hero .store-menu .menu-item-search input{
+    width: 170px;
+    height:26px;
+    font-size: 14px;
+    font-weight: 100;
+    padding-left: 10px;
+    text-shadow: 1px 1px 0px rgba(255, 255, 255, 0.1);
+    background-color: #305d8a;
+    border: 1px solid rgba( 0, 0, 0, 0.3);
+    border-radius:5px;
+    opacity:1;
+}
+main .hero .store-menu .menu-item-search input:hover{
+    border: 1px solid #64a2df;
+}
+main .hero .store-menu .hero-multi-menu{
+    position: relative;
+}
+main .hero .store-menu .hero-multi-menu .hero-menu-1{
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 100%;
+    left: -3px;
+    width: 150px;
+    height:auto;
+    opacity: 1;
+    padding: 6px;
+    background: linear-gradient(90deg, rgba(33, 162, 255, 0.1) 1.89%, rgba(50, 50, 51, 0) 50%), linear-gradient(180deg, #575860 11.6%, #3A4852 54.73%, #2C2D34 100%);;
+    box-shadow: rgb(6, 1, 38) 0px 0px 12px 5px;
+    z-index: 1000;
+}
+main .hero .store-menu .hero-multi-menu .hero-menu-1 li a{
+    font-size: 12px;
+    font-weight: 600;
+    text-wrap: nowrap;
+    color: #d1cbcb;
+}
+main .hero .store-menu .hero-multi-menu .hero-menu-1 li a:hover{
+    color: #f2f2f2;
+    border-bottom: 2px solid #f2f2f2;
+}
+main .hero .store-menu .hero-multi-menu .hero-menu-2{
+    width: 488px;
+    height: 267px;
+    position: absolute;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    opacity: 1;
+    align-items: center;
+    top: 100%;
+    left: 0;
+    padding: 6px;
+    box-shadow: rgb(6, 1, 38) 0px 0px 12px 5px;
+    background-color: #23282c;
+    z-index: 1000;
+}
+main .hero .store-menu .hero-multi-menu .hero-menu-2 img{
+    width: 100%;
+    height:100%;
+    opacity: 1;
+}
+main .hero .store-menu .hero-multi-menu .hero-menu-3{
+    width: 940px;
+    height: 553px;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    opacity: 1;
+    align-items: center;
+    position: absolute;
+    top: 100%;
+    left: -256px;
+    padding: 6px;
+    box-shadow: rgb(6, 1, 38) 0px 0px 12px 5px;
+    z-index: 1000;
+}
+main .hero .store-menu .hero-multi-menu .hero-menu-3 img{
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+}
+main .hero .store-menu .hero-multi-menu .hero-menu.active{
+        display: flex;
+}
+/*HERO İMAGE FİNİSH*/
+/*004-APP SLİDER*/
+main section .main-app-slider{
+    width: 100%;
+    height: 353px;
+}
+main section div.main-app-slider .app-slider{
+    display: none;
+    opacity: 0;
+    width: 100%;
+    height:100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+main section div.main-app-slider .arrow-left{
+    left: 253px;
+}
+main section div.main-app-slider .active{
+    display: flex;
+    opacity: 1;
+    transition: 0.7s ease;
+    cursor: pointer;
+}
+main section div.main-app-slider .app-slider img{
+    height: 100%;
+    width: 616px;
+    box-shadow: rgb(0, 0, 0) 0px 0px 10px 0px;
+}
+main section div.main-app-slider .app-slider .app-slider-right{
+    width: 324px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #0b151e;
+    position: relative;
+}
+main section div.main-app-slider .app-slider .app-slider-right h2{
+    color: #fff;
+    font-weight: 300;
+    margin-bottom:15px;
+    margin-left: 5px;
+    margin-top: 10px;
+}
+main section div.main-app-slider .app-slider .app-slider-right span{
+    background-color: #353e46;
+    color: #fff;
+    font-size: 11px;
+    line-height: 19px;
+    padding-left: 7px;
+    padding-right: 7px;
+    margin-left: 5px;
+    width: 95px;
+}
+#bottom{
+    margin-bottom: 3px;
+    font-size: 18px;
+}
+main section div.main-app-slider .app-slider .app-slider-right .right-imgs{
+    width: 100%;
+    height: 157px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+main section div.main-app-slider .app-slider .app-slider-right .right-imgs img:hover{
+    opacity: 1;
+    transition: 0.7s ease;
+}
+main section div.main-app-slider .app-slider .app-slider-right .right-imgs img{
+    width: 160px;
+    height: 72px;
+    opacity: 0.6;
+}
+main section div.main-app-slider .app-slider .app-slider-right .right-bottom{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+}
+main section div.main-app-slider .app-slider .app-slider-right .right-bottom span{
+    font-size: 11px;
+    background-color: #0b151e;
+    width: 150px;
+}
+
+main section div.main-app-slider .app-slider .app-slider-right .right-bottom img{
+    width: 70px;
+    box-shadow: none;
+}
+/*APP SLİDER FİNİSH*/
+/*005-CAROUSEL*/
+main section div.carousel{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+}
+main section div.carousel .carousel-item{
+    width: 226px;
+    height: 224px;
+    position: relative;
+    cursor:pointer;
+}
+main section div.carousel .carousel-item:hover{
+    transform: scale(1.05);
+    transition: 500ms ease;
+}
+main section div.carousel .carousel-item img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+main section div.carousel .item1 .gradient{
+    background: linear-gradient(rgba(0,0,0,0), rgb(139,0,0) 100%);
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    position: absolute;
+    top: 0;
+    left:0;
+}
+main section div.carousel .item2 .gradient{
+    background: linear-gradient(rgba(0,0,0,0), rgb(0,0,139) 100%);
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    position: absolute;
+    top: 0;
+    left:0;
+}
+main section div.carousel .item3 .gradient{
+    background: linear-gradient(rgba(0,0,0,0), rgb(184,134,11) 100%);
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    position: absolute;
+    top: 0;
+    left:0;
+}
+
+main section div.carousel .item4 .gradient{
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    position: absolute;
+    top: 0;
+    left:0;
+    background: linear-gradient(rgba(0,0,0,0), rgb(0,100,0) 100%);
+}
+main section div.carousel .carousel-item span{
+    font-size: 16px;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 3;
+}
+
+/*CAROUSEL FİNİSH*/
+/*006-GAMESCOM */
+main section div.gamescom{
+    width: 940px;
+    height: 150px;
+    box-shadow: rgb(0, 0, 0) 0px 0px 10px 0px;
+    cursor: pointer;
+}
+main section div.gamescom:hover{
+    box-shadow: rgb(102, 192, 244) 0px 0px 10px 0px;
+}
+/*GAMESCOM FİNİSH*/
+/*007-SİGN İN*/
+main section div.page-sign-in{
+    width: 100%;
+    height: 162px;
+    background-color: #16202d;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+main section div.page-sign-in p{
+    color: #8f98a0;
+}
+main section div.page-sign-in button{
+    width: 110px;
+    height:35px;
+    cursor: pointer;
+    color:rgb(210, 232, 133);
+    background-image:linear-gradient(rgb(164, 208, 7) 5%, rgb(83, 105, 4) 95%);
+    border: 1,6px solid rgb(23, 32, 48);
+    border-radius: 4px;
+}
+main section div.page-sign-in button:hover{
+    color: #fff;
+    background-image: linear-gradient(rgb(164, 208, 7) 5%, rgb(148, 160, 105) 95%);
+}
+main section div.page-sign-in p a{
+    color: #fff;
+}
+main section div.page-sign-in p a:hover{
+    color: #06BFFF;
+}
+/*SİGN İN FİNİSH*/
+/*008-UNDER TEN*/
+main section div.under-ten{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+}
+main section div.under-ten .under-ten-item{
+    width: 229px;
+    height: 133px;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+main section div.under-ten .under-ten-item img{
+    width: 100%;
+    height: 106.65px;
+    object-fit: cover;
+}
+main section div.under-ten .under-ten-item .under-ten-item-bottom{
+    width: 100%;
+    height: 27px;
+    background:linear-gradient(90deg, #475a72 0%, #86adfbd8 100%);
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 10px;
+}
+main section div.under-ten-item:hover > .under-ten-item-bottom{
+    background:linear-gradient(90deg, #a5a1a1 0%, #86adfbd8 100%);
+}
+main section div.under-ten .under-ten-item .under-ten-item-bottom p{
+    font-size: 11px;
+    line-height: 17px;
+    color: rgb(255, 255, 255);
+    background-color: rgba(20, 31, 44, 0.4);
+    text-align: center;
+    padding: 2px 3px
+}
+/*UNDER TEN FİNİSH*/
+/*009-NEW RELEASES*/
+main section.releases{
+    height: 320px;
+    position: relative;
+    padding-left: 275px;
+}
+main section #releases{
+    width: 970px;
+    height: 320px;
+    position: absolute;
+    opacity: 0.5;
+    z-index: 1;
+    mask-image:linear-gradient(90deg, transparent 0%, black 15%, black 85%, transparent 100%);
+}
+main section div.banner{
+    width: 870px;
+    height: 116px;
+    background-image: linear-gradient(45deg, rgba(12, 139, 198, 0.44), rgba(9, 48, 83, 0.83), rgba(8, 95, 135, 0.45));
+    padding-top: 27px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    z-index: 3;
+    top: 25px;
+    left: 61.5%;
+    transform: translateX(-50%);
+    cursor: pointer;
+}
+main section div.banner:hover{
+    background-color: rgba(255, 255, 255, 0.558);
+}
+main section div.banner h1{
+    margin-bottom: 0px;
+    font-size: 32px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    text-shadow:  3px 4px 0px black;;
+    color: white;
+}
+main section div.banner h5{
+    font-size: 15px;
+    font-weight: 800;
+    letter-spacing: 4px;
+    color:#3cc3f1;
+}
+main section .releases-focus{
+    width: 870px;
+    height: 134px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    left: 61.5%;
+    transform: translateX(-50%);
+    z-index: 3;
+    top: 50%;
+}
+main section .releases-focus .releases-focus-item{
+    width: 210px;
+    height: 134px;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+main section .releases-focus .releases-focus-item img{
+    width: 100%;
+    height: 107px;
+}
+main section .releases-focus .releases-focus-item .releases-focus-item-bottom{
+    width: 100%;
+    height: 27px;
+    background:linear-gradient(135deg, rgba(37, 49, 63, 1) 5%, rgba(54, 97, 125, 1) 95%);
+    padding-left: 6px;
+}
+main section .releases-focus .releases-focus-item:hover > .releases-focus-item-bottom{
+    background:linear-gradient(135deg, rgb(55, 69, 73) 5%, rgb(54, 107, 125) 95%);
+}
+main section .releases-focus .releases-focus-item:hover{
+    transform: scale(1.1);
+    box-shadow: rgb(0, 0, 0) 0px 0px 10px 0px;
+    transition: 0.4s ease;
+}
+main section .releases-focus .releases-focus-item .releases-focus-item-bottom span{
+    text-align: center;
+    background-color: #1a293a;
+    color: rgb(255, 255, 255);
+    font-size: 11px;
+    line-height: 12px;
+    padding-left: 6px;
+    padding-right: 6px;
+}
+/*NEW RELEASES FİNİSH*/
+/*010-BİG 4 BUTTONS*/
+main section div.buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+main section div.baslik h4{
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 400;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+
+main section div.buttons button{
+    color: #FFFFFF;
+    background:linear-gradient(90deg, #06BFFF 0%, #2D73FF 100%);;
+    width: 220px;
+    height: 58px;
+    border: 0;
+    border-radius: 3px;
+    font-weight: 500;
+    font-size: 16px;
+    cursor: pointer;
+}
+main section div.buttons button:hover{
+    background:linear-gradient(90deg, #06c1ff34 0%, #2d73ffd8 100%);
+}
+/*BİG 4 BUTTONS FİNİSH*/
+/*011-VİRTUAL REALİTY*/
+main section div.very-baslik{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    height:auto;
+    margin-bottom: 5px;
+    margin-top: 20px;
+}
+main section div.very-baslik h4{
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 400;
+}
+main section div.very-baslik div{
+    display: flex;
+    flex-direction: row;
+}
+main section div.very-baslik h5,
+main section div.very-baslik div h5{
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border: 0.8px solid rgba(255, 255, 255, 0.4);
+    color: rgb(255, 255, 255);
+    text-align: center;
+    cursor: pointer;
+    border-radius:2px;
+    margin-left: 5px;
+}
+main section div.very-baslik h5:hover{
+    border-color:#fff;
+}
+main section div.virtual-reality{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+main section div.virtual-reality .virtual-reality-item{
+    width: 229px;
+    height: 133px;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+main section div.virtual-reality .virtual-reality-item img{
+    width: 100%;
+    height: 106.65px;
+    object-fit: cover;
+}
+main section div.virtual-reality .virtual-reality-item .virtual-reality-item-bottom{
+    width: 100%;
+    height: 27px;
+    background:linear-gradient(90deg, #475a72 0%, #86adfbd8 100%);
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 10px;
+}
+main section div.virtual-reality-item:hover > .virtual-reality-item-bottom{
+    background:linear-gradient(90deg, #a5a1a1 0%, #86adfbd8 100%);
+}
+main section div.virtual-reality .virtual-reality-item .virtual-reality-item-bottom p{
+    font-size: 11px;
+    line-height: 17px;
+    color: rgb(255, 255, 255);
+    background-color: rgba(20, 31, 44, 0.4);
+    text-align: center;
+    padding: 2px 3px
+}
+
+
+/*VİRTUAL REALİTY FİNİSH*/
+/*012-HOME MARKET*/
+main section div.home-market{
+    width: 100%;
+    height:100%;
+    display: flex;
+    flex-direction: row;
+}
+main section div.home-market .big-img{
+    width: 378px;
+    height: 460px;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+main section div.home-market .big-img img{
+    width: 100%;
+}
+main section div.home-market .big-img .big-img-bottom{
+    width: 100%;
+    height: 80px;
+    background-color: #475a72;
+    position: relative;
+}
+main section div.home-market .big-img .big-img-bottom span{
+    padding: 5px;
+    position: absolute;
+    top: 50%;
+    right: 25px;
+    transform: translateY(-50%);
+    color: #ffffff;
+}
+main section div.home-market .simple-imgs{
+    width: 579px;
+    height: 460;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+main section div.home-market .simple-imgs .simple-img-item{
+    width: 178px;
+    margin-left: 11px;
+    margin-bottom: 11px;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+main section div.home-market .simple-imgs .simple-img-item img{
+    width: 100%;
+    height: 182px;
+}
+main section div.home-market .simple-imgs .simple-img-item div{
+    width: 100%;
+    background-color: #475a72;
+    height: 42.5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+main section div.home-market .simple-imgs .simple-img-item .simple-img-bottom .bottom-sale{
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+main section div.home-market .simple-imgs .simple-img-item .simple-img-bottom .bottom-sale .sale{
+    font-size: 20px;
+    background-color: green;
+    color: greenyellow;
+    text-align: center;
+    padding: 1px;
+    padding-left: 4px;
+    padding-right: 4px;
+}
+
+main section div.home-market .simple-imgs .simple-img-item .simple-img-bottom .bottom-sale .price{
+    font-size: 13px;
+    background-color: #494747;
+    color: greenyellow;
+    text-align: center;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 1px;
+    padding-right: 1px;
+}
+
+/*HOME MARKET FİNİSH*/
+/*013-FOOTER*/
+footer{
+    width:100%;
+    height: auto,
+}
+footer .first-footer{
+    width:100%;
+    height: 250px;
+    background-color: #000;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+footer .first-footer h2{
+    text-align: center;
+    color: rgb(135, 173, 185);
+}
+footer .first-footer p{ 
+    color: #8f98a0;
+}
+footer .first-footer button{
+    width: 110px;
+    height:35px;
+    cursor: pointer;
+    color:rgb(210, 232, 133);
+    background-image:linear-gradient(rgb(164, 208, 7) 5%, rgb(83, 105, 4) 95%);
+    border: 1,6px solid rgb(23, 32, 48);
+    border-radius: 4px;
+}
+footer .first-footer button:hover{
+    color: #fff;
+    background-image: linear-gradient(rgb(164, 208, 7) 5%, rgb(148, 160, 105) 95%);
+}
+footer .first-footer p a{
+    color: #fff;
+}
+footer .first-footer p a:hover{
+    color: #06BFFF;
+}
+footer .second-footer{
+    width: 100%;
+    height: 200px;
+    background-color: #1b2229;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+footer .second-footer img{
+    width: 100%;
+    height: 100%;
+}
